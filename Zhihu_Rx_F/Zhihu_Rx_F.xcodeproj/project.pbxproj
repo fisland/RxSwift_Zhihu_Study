@@ -14,6 +14,13 @@
 		130F754A1F6FA207000CADFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130F75481F6FA207000CADFD /* LaunchScreen.storyboard */; };
 		130F75551F6FA207000CADFD /* Zhihu_Rx_FTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F75541F6FA207000CADFD /* Zhihu_Rx_FTests.swift */; };
 		130F75601F6FA207000CADFD /* Zhihu_Rx_FUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F755F1F6FA207000CADFD /* Zhihu_Rx_FUITests.swift */; };
+		1334F8531F6FC2CD003376D8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334F8521F6FC2CD003376D8 /* ApiManager.swift */; };
+		13E7D6821F6FC8EB00EC7E97 /* ToModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6811F6FC8EB00EC7E97 /* ToModel+Extension.swift */; };
+		13E7D6841F6FC8FA00EC7E97 /* Tool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6831F6FC8FA00EC7E97 /* Tool+Extension.swift */; };
+		13E7D6861F6FD1BA00EC7E97 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6851F6FD1BA00EC7E97 /* LaunchModel.swift */; };
+		13E7D6881F6FD25F00EC7E97 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6871F6FD25F00EC7E97 /* ThemeModel.swift */; };
+		13E7D68A1F6FD35A00EC7E97 /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6891F6FD35A00EC7E97 /* NewsDetailModel.swift */; };
+		13E7D68C1F6FD39500EC7E97 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D68B1F6FD39500EC7E97 /* StoryModel.swift */; };
 		97F4301202DF94471FBBD0DC /* Pods_Zhihu_Rx_F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E367C2B02B6C2471C3D544 /* Pods_Zhihu_Rx_F.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +55,13 @@
 		130F755B1F6FA207000CADFD /* Zhihu_Rx_FUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zhihu_Rx_FUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		130F755F1F6FA207000CADFD /* Zhihu_Rx_FUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zhihu_Rx_FUITests.swift; sourceTree = "<group>"; };
 		130F75611F6FA207000CADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1334F8521F6FC2CD003376D8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		13E7D6811F6FC8EB00EC7E97 /* ToModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToModel+Extension.swift"; sourceTree = "<group>"; };
+		13E7D6831F6FC8FA00EC7E97 /* Tool+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tool+Extension.swift"; sourceTree = "<group>"; };
+		13E7D6851F6FD1BA00EC7E97 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		13E7D6871F6FD25F00EC7E97 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		13E7D6891F6FD35A00EC7E97 /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
+		13E7D68B1F6FD39500EC7E97 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		47E367C2B02B6C2471C3D544 /* Pods_Zhihu_Rx_F.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zhihu_Rx_F.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9976394F7D3DA3581E7F92 /* Pods-Zhihu_Rx_F.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhihu_Rx_F.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhihu_Rx_F/Pods-Zhihu_Rx_F.release.xcconfig"; sourceTree = "<group>"; };
 		F2518464C49A82D670DA0845 /* Pods-Zhihu_Rx_F.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhihu_Rx_F.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhihu_Rx_F/Pods-Zhihu_Rx_F.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +161,9 @@
 		1334F84E1F6FA78B003376D8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				1334F8521F6FC2CD003376D8 /* ApiManager.swift */,
+				13E7D6811F6FC8EB00EC7E97 /* ToModel+Extension.swift */,
+				13E7D6831F6FC8FA00EC7E97 /* Tool+Extension.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -154,6 +171,10 @@
 		1334F84F1F6FA78C003376D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13E7D6851F6FD1BA00EC7E97 /* LaunchModel.swift */,
+				13E7D6871F6FD25F00EC7E97 /* ThemeModel.swift */,
+				13E7D68B1F6FD39500EC7E97 /* StoryModel.swift */,
+				13E7D6891F6FD35A00EC7E97 /* NewsDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,7 +395,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E7D6881F6FD25F00EC7E97 /* ThemeModel.swift in Sources */,
+				13E7D68A1F6FD35A00EC7E97 /* NewsDetailModel.swift in Sources */,
+				13E7D68C1F6FD39500EC7E97 /* StoryModel.swift in Sources */,
+				13E7D6861F6FD1BA00EC7E97 /* LaunchModel.swift in Sources */,
 				130F75421F6FA207000CADFD /* ViewController.swift in Sources */,
+				1334F8531F6FC2CD003376D8 /* ApiManager.swift in Sources */,
+				13E7D6821F6FC8EB00EC7E97 /* ToModel+Extension.swift in Sources */,
+				13E7D6841F6FC8FA00EC7E97 /* Tool+Extension.swift in Sources */,
 				130F75401F6FA207000CADFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,7 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRAFFJ7AHM;
 				INFOPLIST_FILE = Zhihu_Rx_F/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zehuihong.Zhihu-Rx-F";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,7 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRAFFJ7AHM;
 				INFOPLIST_FILE = Zhihu_Rx_F/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zehuihong.Zhihu-Rx-F";
 				PRODUCT_NAME = "$(TARGET_NAME)";
