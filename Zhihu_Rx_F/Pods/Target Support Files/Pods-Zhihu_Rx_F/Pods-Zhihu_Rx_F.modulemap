@@ -1,0 +1,6 @@
+framework module Pods_Zhihu_Rx_F {
+  umbrella header "Pods-Zhihu_Rx_F-umbrella.h"
+
+  export *
+  module * { export * }
+}
