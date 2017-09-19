@@ -43,6 +43,13 @@ class BannerView: UICollectionView {
                 }
             })
             .addDisposableTo(disposeBag)
+        
+        self.rx
+            .modelSelected(StoryModel.self)
+            .subscribe(onNext: { model in
+                self.bannerDelegate?.selectedItem(model: model)
+            })
+            .addDisposableTo(disposeBag)
     }
 }
 
