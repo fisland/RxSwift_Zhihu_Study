@@ -15,6 +15,11 @@
 		130F75551F6FA207000CADFD /* Zhihu_Rx_FTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F75541F6FA207000CADFD /* Zhihu_Rx_FTests.swift */; };
 		130F75601F6FA207000CADFD /* Zhihu_Rx_FUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F755F1F6FA207000CADFD /* Zhihu_Rx_FUITests.swift */; };
 		1334F8531F6FC2CD003376D8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334F8521F6FC2CD003376D8 /* ApiManager.swift */; };
+		1394AB841F7214E000558FFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB831F7214E000558FFE /* HomeViewController.swift */; };
+		1394AB861F7214F500558FFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB851F7214F500558FFE /* MenuViewController.swift */; };
+		1394AB881F72150300558FFE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB871F72150300558FFE /* DetailViewController.swift */; };
+		1394AB8A1F72152100558FFE /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB891F72152100558FFE /* ThemeViewController.swift */; };
+		1394AB8C1F72153500558FFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB8B1F72153500558FFE /* MainViewController.swift */; };
 		13E7D6821F6FC8EB00EC7E97 /* ToModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6811F6FC8EB00EC7E97 /* ToModel+Extension.swift */; };
 		13E7D6841F6FC8FA00EC7E97 /* Tool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6831F6FC8FA00EC7E97 /* Tool+Extension.swift */; };
 		13E7D6861F6FD1BA00EC7E97 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7D6851F6FD1BA00EC7E97 /* LaunchModel.swift */; };
@@ -62,6 +67,11 @@
 		130F755F1F6FA207000CADFD /* Zhihu_Rx_FUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zhihu_Rx_FUITests.swift; sourceTree = "<group>"; };
 		130F75611F6FA207000CADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1334F8521F6FC2CD003376D8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		1394AB831F7214E000558FFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1394AB851F7214F500558FFE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1394AB871F72150300558FFE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1394AB891F72152100558FFE /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		1394AB8B1F72153500558FFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		13E7D6811F6FC8EB00EC7E97 /* ToModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToModel+Extension.swift"; sourceTree = "<group>"; };
 		13E7D6831F6FC8FA00EC7E97 /* Tool+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tool+Extension.swift"; sourceTree = "<group>"; };
 		13E7D6851F6FD1BA00EC7E97 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
@@ -207,6 +217,11 @@
 		1334F8511F6FA78C003376D8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1394AB831F7214E000558FFE /* HomeViewController.swift */,
+				1394AB851F7214F500558FFE /* MenuViewController.swift */,
+				1394AB871F72150300558FFE /* DetailViewController.swift */,
+				1394AB891F72152100558FFE /* ThemeViewController.swift */,
+				1394AB8B1F72153500558FFE /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -422,12 +437,17 @@
 				13E7D68C1F6FD39500EC7E97 /* StoryModel.swift in Sources */,
 				13E7D6861F6FD1BA00EC7E97 /* LaunchModel.swift in Sources */,
 				130F75421F6FA207000CADFD /* ViewController.swift in Sources */,
+				1394AB881F72150300558FFE /* DetailViewController.swift in Sources */,
 				1334F8531F6FC2CD003376D8 /* ApiManager.swift in Sources */,
 				13E7D6821F6FC8EB00EC7E97 /* ToModel+Extension.swift in Sources */,
+				1394AB861F7214F500558FFE /* MenuViewController.swift in Sources */,
+				1394AB8A1F72152100558FFE /* ThemeViewController.swift in Sources */,
+				1394AB841F7214E000558FFE /* HomeViewController.swift in Sources */,
 				13E7D6921F70BF2600EC7E97 /* ThemeTableViewCell.swift in Sources */,
 				13E7D6841F6FC8FA00EC7E97 /* Tool+Extension.swift in Sources */,
 				13E7D6941F70BF4A00EC7E97 /* BannerView.swift in Sources */,
 				130F75401F6FA207000CADFD /* AppDelegate.swift in Sources */,
+				1394AB8C1F72153500558FFE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

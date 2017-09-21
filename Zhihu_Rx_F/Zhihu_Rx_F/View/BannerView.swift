@@ -19,7 +19,7 @@ class BannerView: UICollectionView {
     
     let disposeBag = DisposeBag()
     let offY = Variable(0.0)
-    let bannerDelegate : BannerDelegate? = nil
+    var bannerDelegate : BannerDelegate? = nil
     
     override func awakeFromNib() {
         contentOffset.x = KScreenW
