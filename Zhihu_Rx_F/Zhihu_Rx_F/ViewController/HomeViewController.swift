@@ -201,15 +201,16 @@ extension HomeViewController : UIScrollViewDelegate{
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y <= 64 {
+        refreshView?.resetLayer()
+
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y <= -64 {
             refreshView?.beginRefresh {
                 self.loadData()
             }
         }
-    }
-    
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        refreshView?.resetLayer()
     }
 }
 

@@ -54,6 +54,7 @@ class RefreshView: UIView {
 
 extension RefreshView{
     func pullToRefresh(progress:CGFloat) {
+        print("progress:",progress)
         circleLayer.strokeEnd = progress
     }
     
@@ -73,6 +74,8 @@ extension RefreshView{
         refreshing = false
         indicatorView.stopAnimating()
         indicatorView.removeFromSuperview()
+        circleLayer.strokeEnd = 0
+
     }
     
     func resetLayer() {

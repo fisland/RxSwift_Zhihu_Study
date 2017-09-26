@@ -20,6 +20,9 @@ class ThemeViewController: UIViewController {
     let dispose = DisposeBag()
     let menuView = MenuViewController.shareInstance
     let listModelArr = Variable([StoryModel]())
+    var refreshView : RefreshView?
+    let offHeadY = Variable(0.0)
+    
     var id = 0
 
     var menuBtn: UIButton!
@@ -30,6 +33,13 @@ class ThemeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         getData()
+        addRefresh()
+        offHeadY.asObservable()
+            .subscribe(onNext:{ offy in
+                self.headImg.frame.origin.y = -64
+                self.headImg.frame.size.height = 64 - CGFloat.init(offy)
+            })
+            .disposed(by: dispose)
         
         menuBtn.rx.tap
             .subscribe(onNext:{
@@ -65,9 +75,7 @@ class ThemeViewController: UIViewController {
                 self.navigationController?.pushViewController(detailVc, animated: true)
             })
             .disposed(by: dispose)
-        
-        
-        
+
         listModelArr
             .asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: "ListTableViewCell", cellType: ListTableViewCell.self)){ indexPath, item , cell in
@@ -94,12 +102,7 @@ class ThemeViewController: UIViewController {
 
 extension ThemeViewController{
     func setupUI(){
-        /*
-         NotificationCenter.default.post(name: Notification.Name.init(rawValue: "setTheme"), object: nil, userInfo: ["model": model])
-         UserDefaults.standard.set(model.name, forKey: "themeName")
-         UserDefaults.standard.set(model.thumbnail, forKey: "themeImgUrl")
-         UserDefaults.standard.set(model.id!, forKey: "themeNameId")
-         */
+
         title = UserDefaults.standard.object(forKey: "themeName") as! String?
         id = UserDefaults.standard.object(forKey: "themeNameId") as! Int
         let url = UserDefaults.standard.object(forKey: "themeImgUrl") as! String?
@@ -131,12 +134,43 @@ extension ThemeViewController{
             .subscribe(onNext: { listModel in
                 self.listModelArr.value = listModel.stories!
                 self.tableView.scrollToRow(at: IndexPath.init(row: 0, section: 0), at: .top, animated: true)
+                self.refreshView?.endRefresh()
+
             })
             .disposed(by: dispose)
     }
     
+    func addRefresh() {
+        refreshView = RefreshView.init(frame: CGRect.init(x: 118, y: -42, width: 40, height: 40))
+        refreshView?.backgroundColor = UIColor.clear
+        view.addSubview(refreshView!)
+    }
+    
 }
+extension ThemeViewController : UIScrollViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y >= 0 {
+            self.offHeadY.value = Double(0.0)
+        }
+        else{
+            self.offHeadY.value = Double(scrollView.contentOffset.y)
+            refreshView?.pullToRefresh(progress: (-scrollView.contentOffset.y) / 64)
 
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        refreshView?.resetLayer()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y <= -64 {
+            refreshView?.beginRefresh {
+                self.getData()
+            }
+        }
+    }
+}
 extension ThemeViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01

@@ -15,6 +15,7 @@
 		130F75551F6FA207000CADFD /* Zhihu_Rx_FTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F75541F6FA207000CADFD /* Zhihu_Rx_FTests.swift */; };
 		130F75601F6FA207000CADFD /* Zhihu_Rx_FUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F755F1F6FA207000CADFD /* Zhihu_Rx_FUITests.swift */; };
 		1334F8531F6FC2CD003376D8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334F8521F6FC2CD003376D8 /* ApiManager.swift */; };
+		1386BCB61F78D8450055BC5B /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1386BCB51F78D8450055BC5B /* ThemeViewModel.swift */; };
 		1394AB841F7214E000558FFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB831F7214E000558FFE /* HomeViewController.swift */; };
 		1394AB861F7214F500558FFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB851F7214F500558FFE /* MenuViewController.swift */; };
 		1394AB881F72150300558FFE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394AB871F72150300558FFE /* DetailViewController.swift */; };
@@ -67,6 +68,7 @@
 		130F755F1F6FA207000CADFD /* Zhihu_Rx_FUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zhihu_Rx_FUITests.swift; sourceTree = "<group>"; };
 		130F75611F6FA207000CADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1334F8521F6FC2CD003376D8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		1386BCB51F78D8450055BC5B /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
 		1394AB831F7214E000558FFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1394AB851F7214F500558FFE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1394AB871F72150300558FFE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		1334F84D1F6FA78B003376D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1386BCB51F78D8450055BC5B /* ThemeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				13E7D6841F6FC8FA00EC7E97 /* Tool+Extension.swift in Sources */,
 				13E7D6941F70BF4A00EC7E97 /* BannerView.swift in Sources */,
 				130F75401F6FA207000CADFD /* AppDelegate.swift in Sources */,
+				1386BCB61F78D8450055BC5B /* ThemeViewModel.swift in Sources */,
 				1394AB8C1F72153500558FFE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
